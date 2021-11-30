@@ -1,0 +1,21 @@
+{
+    "name": "lukes/todo",
+    "description": "Library",
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Luke Storer",
+            "email": "luke.storer@navirtassafety.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Navitas\\Todo\\": "src/"
+        }
+    }
+}
