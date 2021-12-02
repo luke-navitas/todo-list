@@ -25,7 +25,7 @@ class ListCompleteTest extends TestCase
         $this->listManager->addItem(new ItemText);
         $this->assertEmpty($this->listComplete);
     }
-    
+
     public function testItAddsATickedItem()
     {
         $item = new ItemText;
@@ -36,19 +36,19 @@ class ListCompleteTest extends TestCase
 
     public function testItAddsMultipleTickedItems()
     {
-        for ($i=0; $i < 5; $i++) { 
+        for ($i = 0; $i < 5; $i++) {
             $item = new ItemText;
             $item->tick(true);
             $this->listManager->addItem($item);
         }
-        
+
         $this->assertCount(5, $this->listComplete);
     }
 
     public function testItRemovesItems()
     {
         $items = [];
-        for ($i=0; $i < 5; $i++) { 
+        for ($i = 0; $i < 5; $i++) {
             $item = new ItemText;
             $items[$item->getUniqueIdentifier()] = $item;
             $item->tick(true);
@@ -58,8 +58,7 @@ class ListCompleteTest extends TestCase
         $this->assertCount(5, $this->listComplete);
 
         $this->listComplete->removeItem($items[array_rand($items, 1)]);
-        
-        $this->assertCount(4, $this->listComplete);
 
+        $this->assertCount(4, $this->listComplete);
     }
 }

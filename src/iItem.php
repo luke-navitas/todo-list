@@ -4,6 +4,6 @@ namespace Todo;
 
 use SplSubject;
 
-interface iItem extends Identifiable, SplSubject, Tickable {
-    
+interface IItem extends Identifiable, SplSubject, Tickable
+{
 }

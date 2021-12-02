@@ -9,7 +9,7 @@ class ListIncomplete extends ListGeneric
     public function update(SplSubject $subject): void
     {
         if ($subject instanceof iItem) {
-            if($subject->isTicked()) {
+            if ($subject->isTicked()) {
                 unset($this->items[$subject->getUniqueIdentifier()]);
             } else {
                 $this->items[$subject->getUniqueIdentifier()] = $subject;
