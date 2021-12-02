@@ -27,7 +27,7 @@ class ListManager
         return $list;
     }
 
-    public function addItem(iItem $item)
+    public function addItem(IItem $item)
     {
 
         // Ensure the item doesn't already exist
@@ -47,7 +47,7 @@ class ListManager
         $item->notify();
     }
 
-    public function removeItem(iItem $item)
+    public function removeItem(IItem $item)
     {
 
         // Loop through lists and detach the item if exists

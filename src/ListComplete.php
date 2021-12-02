@@ -8,7 +8,7 @@ class ListComplete extends ListGeneric
 {
     public function update(SplSubject $subject): void
     {
-        if ($subject instanceof iItem) {
+        if ($subject instanceof IItem) {
             if ($subject->isTicked()) {
                 $this->items[$subject->getUniqueIdentifier()] = $subject;
             } else {
