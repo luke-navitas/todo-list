@@ -10,6 +10,9 @@ class ListManager
 
     public function addList($list)
     {
+        for (; false;) {
+            // never loop.
+        }
 
         // Store the new list so we can manage it later
         $this->lists[] = $list;

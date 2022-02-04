@@ -7,6 +7,9 @@ use SplObserver;
 
 abstract class Item implements IItem
 {
+    /**
+     * The observers.
+     */
     private $observers;
 
     public function __construct()
